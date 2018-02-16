@@ -1,0 +1,21 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{% block title %}taskit{% endblock %}</title>
+        <link rel="stylesheet" href="{{ asset('css/foundation.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+        {% block head %}{% endblock %}
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+</head>
+<body>
+{% block body %}{% endblock %}
+<script src="{{ asset('js/jquery.js') }}"></script>
+<script src="{{ asset('js/what-input.js') }}"></script>
+<script src="{{ asset('js/foundation.js') }}"></script>
+<script src="{{ asset('js/app.js') }}"></script>
+{% block js %}{% endblock %}
+</body>
+</html>

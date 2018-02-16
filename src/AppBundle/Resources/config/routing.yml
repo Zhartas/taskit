@@ -1,0 +1,7 @@
+taskit:
+    path:    /
+    defaults: { _controller:  AppBundle:Home:index }
+
+home:
+    path:    /home
+    defaults: { _controller:  AppBundle:Home:index }
